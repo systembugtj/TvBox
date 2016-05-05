@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SelectBox">
+        <attr name="select_title" format="string"/>
+        <attr name="select_description" format="string"/>
+        <attr name="left_arrow" format="integer"/>
+        <attr name="right_arrow" format="color|reference"/>
+    </declare-styleable>
+</resources>
