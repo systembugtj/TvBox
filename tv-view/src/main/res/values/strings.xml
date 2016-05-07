@@ -5,4 +5,6 @@
     <string name="action_turn_off">OFF</string>
     <string name="action_disable">Disable</string>
     <string name="action_enable">Enable</string>
+    <string name="action_show">Show</string>
+    <string name="action_hide">Hide</string>
 </resources>

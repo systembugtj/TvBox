@@ -6,4 +6,6 @@
     <string name="action_turn_off">关闭</string>
     <string name="action_disable">禁止</string>
     <string name="action_enable">允许</string>
+    <string name="action_show">显示</string>
+    <string name="action_hide">隐藏</string>
 </resources>

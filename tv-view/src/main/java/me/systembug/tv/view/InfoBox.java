@@ -59,7 +59,7 @@ public class InfoBox extends RelativeLayout {
         mActionItem = (TextView) v.findViewById(R.id.action_item);
 
         if (attrs != null) {
-            TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.ButtonBox);
+            TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.InfoBox);
 
             mTitle.setText(a.getString(R.styleable.InfoBox_info_title));
             mDesc.setText(a.getString(R.styleable.InfoBox_info_description));

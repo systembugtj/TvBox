@@ -33,6 +33,16 @@ public class SettingValues {
         return options;
     }
 
+    public static List<String> showHide(Context context) {
+
+        List<String> options = Lists.newArrayList();
+
+        options.add(context.getString(R.string.action_show));
+        options.add(context.getString(R.string.action_hide));
+
+        return options;
+    }
+
 
     public static List<String> timers(Context context, Integer[] values) {
         List<String> options = Lists.newArrayList();
