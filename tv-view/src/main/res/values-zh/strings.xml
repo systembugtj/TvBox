@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TvView</string>
+    <string name="second">秒</string>
+    <string name="action_turn_on">开启</string>
+    <string name="action_turn_off">关闭</string>
+    <string name="action_disable">禁止</string>
+    <string name="action_enable">允许</string>
+</resources>

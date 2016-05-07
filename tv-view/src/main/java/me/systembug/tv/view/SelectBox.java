@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -16,6 +17,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.joanzapata.iconify.IconDrawable;
+import com.joanzapata.iconify.fonts.MaterialIcons;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,10 +77,16 @@ public class SelectBox extends RelativeLayout {
             Drawable leftArrow = a.getDrawable(R.styleable.SelectBox_left_arrow);
             if (leftArrow != null) {
                 mLeft.setImageDrawable(leftArrow);
+            } else {
+                mLeft.setImageDrawable(new IconDrawable(getContext(),
+                        MaterialIcons.md_keyboard_arrow_left).color(Color.WHITE).actionBarSize());
             }
             Drawable rightArrow = a.getDrawable(R.styleable.SelectBox_right_arrow);
             if (rightArrow != null) {
-                mLeft.setImageDrawable(rightArrow);
+                mRight.setImageDrawable(rightArrow);
+            } else {
+                mRight.setImageDrawable(new IconDrawable(getContext(),
+                        MaterialIcons.md_keyboard_arrow_right).color(Color.WHITE).actionBarSize());
             }
         }
         this.setFocusable(true);
@@ -101,6 +111,7 @@ public class SelectBox extends RelativeLayout {
                     mCurrent = mOptions.size() - 1;
                 }
                 updateSelection();
+
                 return true;
             case KeyEvent.KEYCODE_DPAD_LEFT:
                 mCurrent --;
@@ -108,6 +119,7 @@ public class SelectBox extends RelativeLayout {
                     mCurrent = 0;
                 }
                 updateSelection();
+
                 return true;
             case KeyEvent.KEYCODE_ENTER:
                 showSelection();
@@ -127,7 +139,7 @@ public class SelectBox extends RelativeLayout {
                     dialog.dismiss();
                     mCurrent = which;
 
-                    fireSelecChanged(mCurrent);
+
 
                     updateSelection();
                 });
@@ -138,6 +150,7 @@ public class SelectBox extends RelativeLayout {
     private void updateSelection() {
         if (mCurrent >= 0 && mCurrent < mOptions.size()) {
             mActionItem.setText(mOptions.get(mCurrent));
+            fireSelecChanged(mCurrent);
         }
     }
 

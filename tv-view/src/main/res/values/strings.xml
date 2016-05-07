@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TvView</string>
+    <string name="second">s</string>
+    <string name="action_turn_on">ON</string>
+    <string name="action_turn_off">OFF</string>
+    <string name="action_disable">Disable</string>
+    <string name="action_enable">Enable</string>
 </resources>

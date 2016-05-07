@@ -32,19 +32,18 @@
         android:layout_width="wrap_content"
         android:gravity="center"
         android:layout_height="match_parent">
-        <ImageView
-            android:id="@+id/left_arrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/action_item"
-            android:minWidth="64dp"
-            android:gravity="center"
+            android:minWidth="32dp"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            />
         <ImageView
-            android:id="@+id/right_arrow"
+            android:id="@+id/more_arrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

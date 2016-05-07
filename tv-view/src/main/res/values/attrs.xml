@@ -6,4 +6,22 @@
         <attr name="left_arrow" format="integer"/>
         <attr name="right_arrow" format="color|reference"/>
     </declare-styleable>
+    <declare-styleable name="ButtonBox">
+        <attr name="button_title" format="string"/>
+        <attr name="button_description" format="string"/>
+        <attr name="button_name" format="string"/>
+        <attr name="more_arrow" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="NavigationHeader">
+        <attr name="navigator_title" format="string"/>
+        <attr name="navigator_description" format="string"/>
+        <attr name="back_arrow" format="color|reference"/>
+    </declare-styleable>
+    <declare-styleable name="InfoBox">
+        <attr name="info_title" format="string"/>
+        <attr name="info_description" format="string"/>
+        <attr name="info_detail" format="string"/>
+        <attr name="info_more" format="color|reference"/>
+    </declare-styleable>
 </resources>
