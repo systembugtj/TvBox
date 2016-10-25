@@ -3,7 +3,8 @@ apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'maven-publish'
 
-def VERSION_NAME = "1.0.0"
+def VERSION_NAME = "1.1.0"
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -27,9 +28,14 @@ android {
 }
 
 dependencies {
+    final SUPPOERT_VERSION = "23.4.0"
+
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile "com.android.support:appcompat-v7:${SUPPOERT_VERSION}"
+    compile "com.android.support:recyclerview-v7:${SUPPOERT_VERSION}"
+    compile "com.android.support:cardview-v7:${SUPPOERT_VERSION}"
+    compile "com.android.support:support-v4:${SUPPOERT_VERSION}"
 
     compile 'com.google.guava:guava:19.0+'
 
