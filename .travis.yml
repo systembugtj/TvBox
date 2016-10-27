@@ -1,7 +1,16 @@
 language: android
+sudo: required
+
 jdk:
   - oraclejdk8
+
+install: true
+
+script:
+  - sudo apt-get update && sudo apt-get install oracle-java8-installer
+  - java -version
 android:
+  
   components:
     # Uncomment the lines below if you want to
     # use the latest revision of Android SDK Tools
