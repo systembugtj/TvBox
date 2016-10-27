@@ -3,6 +3,10 @@ apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'maven-publish'
 
+def context_url = hasProperty('artifactory_context_url') ? artifactory_context_url : System.getenv('artifactory_context_url')
+def username = hasProperty('artifactory_username') ? artifactory_username : System.getenv('artifactory_username')
+def password = hasProperty('artifactory_password') ? artifactory_password : System.getenv('artifactory_password')
+
 def VERSION_NAME = "1.1.0"
 
 android {
@@ -60,13 +64,13 @@ publishing {
 }
 
 artifactory {
-    contextUrl = artifactory_context_url
+    contextUrl = context_url
     publish {
         repository {
             repoKey = 'libs-release-local'
 
-            username = artifactory_username
-            password = artifactory_password
+            username = username
+            password = password
         }
         defaults {
             publications('aar')
