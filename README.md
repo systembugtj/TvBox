@@ -17,6 +17,6 @@ allprojects {
 }
 //Step 2. Add the dependency
 dependencies {
-    compile 'com.github.systembugtj:snappydb:2.0.1'
+    compile 'com.github.systembugtj:tvbox:1.1.0'
 }
 ```
