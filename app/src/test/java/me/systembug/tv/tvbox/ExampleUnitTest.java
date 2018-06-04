@@ -1,4 +1,4 @@
-package me.systemb.tv.tvbox;
+package me.systembug.tv.tvbox;
 
 import org.junit.Test;
 

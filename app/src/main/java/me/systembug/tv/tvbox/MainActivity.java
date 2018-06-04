@@ -1,4 +1,4 @@
-package me.systemb.tv.tvbox;
+package me.systembug.tv.tvbox;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

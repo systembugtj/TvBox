@@ -1,4 +1,4 @@
-package me.systembug.tv.model;
+package me.systembug.tv.view.model;
 
 import android.content.Context;
 

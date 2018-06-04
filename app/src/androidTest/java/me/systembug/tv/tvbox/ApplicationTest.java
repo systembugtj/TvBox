@@ -1,4 +1,4 @@
-package me.systemb.tv.tvbox;
+package me.systembug.tv.tvbox;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
